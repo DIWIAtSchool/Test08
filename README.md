@@ -1,9 +1,4 @@
 # Test08 #
-## Test09 ## 
-### Testo10 ###
-**Das ist fett**
-
-*Italic*
 
 > Blockquote
  zweite Zeile
@@ -20,7 +15,15 @@
 `#include <stdio.h>`
 
 ```
-Codeblock
+private static void findeWert(BinaryTree binTree, int value) {
+        Node knoten = binTree.findNode(binTree.getRoot(), value);
+        if (knoten != null) {
+            System.out.println("Knoten mit dem Wert " + value + " gefunden!; Knoten.getData()=" + knoten.getData());
+        }
+        else {
+            System.out.println("Knoten mit dem Wert " + value + " nicht gefunden.");
+        }
+    }
 ```
 
 -------
